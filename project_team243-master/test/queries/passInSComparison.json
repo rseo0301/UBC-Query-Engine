@@ -1,0 +1,19 @@
+{
+    "title": "SELECT dept, pass WHERE pass > 500",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_pass": 500
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_pass"
+            ],
+            "ORDER": "courses_pass"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

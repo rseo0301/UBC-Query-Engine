@@ -1,0 +1,20 @@
+{
+    "title": "IS has 2 filters",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "cpsc",
+                "courses_instructor": "**"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+        "isQueryValid": false,
+        "result": "InsightError"
+}

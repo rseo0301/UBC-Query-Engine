@@ -1,0 +1,20 @@
+{
+    "title": "Invalid key courses_iid in IS.",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_iid": "110"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title",
+                "courses_yeaor"
+            ],
+            "ORDER": "courses_instructor"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

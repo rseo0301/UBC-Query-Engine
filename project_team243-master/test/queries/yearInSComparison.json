@@ -1,0 +1,19 @@
+{
+    "title": "SELECT dept, year WHERE year > 2015",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_year": 2015
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_year"
+            ],
+            "ORDER": "courses_year"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

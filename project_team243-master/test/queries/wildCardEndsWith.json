@@ -1,0 +1,394 @@
+{
+    "title": "Wildcard ends with",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_year": 2010
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_instructor": "*gregor"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 100
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 67.17,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 67.21,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 67.47,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 68.5,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "apsc",
+            "courses_id": "160",
+            "courses_avg": 68.86,
+            "courses_instructor": "berg, celina;miller, gregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "221",
+            "courses_avg": 69.29,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 69.94,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "110",
+            "courses_avg": 70.11,
+            "courses_instructor": "kiczales, gregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 70.23,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 70.37,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 70.5,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 70.52,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 70.58,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "110",
+            "courses_avg": 70.78,
+            "courses_instructor": "kiczales, gregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 70.83,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "221",
+            "courses_avg": 70.9,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 71,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 71.06,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "110",
+            "courses_avg": 71.07,
+            "courses_instructor": "kiczales, gregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 71.12,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 71.42,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 71.58,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 71.58,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 71.74,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "110",
+            "courses_avg": 71.96,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 72,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 72.1,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "110",
+            "courses_avg": 72.14,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 72.48,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 72.55,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 72.65,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 72.83,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 72.84,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 73,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "110",
+            "courses_avg": 73.13,
+            "courses_instructor": "kiczales, gregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 73.23,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 73.25,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "apsc",
+            "courses_id": "160",
+            "courses_avg": 73.5,
+            "courses_instructor": "cooper, kendra;miller, gregor"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "110",
+            "courses_avg": 73.53,
+            "courses_instructor": "kiczales, gregor"
+        },
+        {
+            "courses_dept": "apsc",
+            "courses_id": "160",
+            "courses_avg": 73.7,
+            "courses_instructor": "khosravi, hassan;miller, gregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 73.8,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 73.87,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 74,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 74.1,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "110",
+            "courses_avg": 74.24,
+            "courses_instructor": "kiczales, gregor"
+        },
+        {
+            "courses_dept": "apsc",
+            "courses_id": "160",
+            "courses_avg": 74.38,
+            "courses_instructor": "knorr, edwin max;miller, gregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 74.59,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "220",
+            "courses_avg": 74.61,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 75.19,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "apsc",
+            "courses_id": "160",
+            "courses_avg": 75.43,
+            "courses_instructor": "khosravi, hassan;miller, gregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "110",
+            "courses_avg": 76.3,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "110",
+            "courses_avg": 76.46,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "220",
+            "courses_avg": 76.55,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "221",
+            "courses_avg": 76.95,
+            "courses_instructor": "morgan, george macgregor"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "110",
+            "courses_avg": 77.11,
+            "courses_instructor": "kiczales, gregor"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "110",
+            "courses_avg": 77.43,
+            "courses_instructor": "kiczales, gregor"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "110",
+            "courses_avg": 77.69,
+            "courses_instructor": "kiczales, gregor"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "110",
+            "courses_avg": 84.91,
+            "courses_instructor": "kiczales, gregor"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "110",
+            "courses_avg": 85.11,
+            "courses_instructor": "kiczales, gregor"
+        }
+    ]
+}

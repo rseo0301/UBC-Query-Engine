@@ -1,0 +1,19 @@
+{
+    "title": "SELECT dept, id WHERE dept == math",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_dept": "math"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

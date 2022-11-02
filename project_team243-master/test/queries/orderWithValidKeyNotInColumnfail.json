@@ -1,0 +1,29 @@
+{
+    "title": "Valid key in order but not in columns",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "EQ": {
+                        "courses_avg": 90
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_pass": 2
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_fail"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

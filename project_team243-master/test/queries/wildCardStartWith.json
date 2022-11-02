@@ -1,0 +1,382 @@
+{
+    "title": "Wildcard starts with",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_year": 2010
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_instructor": "jack*"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 100
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "phil",
+            "courses_id": "120",
+            "courses_avg": 55.33,
+            "courses_instructor": "jackson, howard"
+        },
+        {
+            "courses_dept": "phil",
+            "courses_id": "120",
+            "courses_avg": 65.9,
+            "courses_instructor": "jackson, howard"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "294",
+            "courses_avg": 68.98,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "450",
+            "courses_avg": 69.8,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "450",
+            "courses_avg": 70.24,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "101",
+            "courses_avg": 70.43,
+            "courses_instructor": "jackes, robert;milne, tamar"
+        },
+        {
+            "courses_dept": "phil",
+            "courses_id": "120",
+            "courses_avg": 70.75,
+            "courses_instructor": "jackson, howard;weiss, max"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "101",
+            "courses_avg": 70.87,
+            "courses_instructor": "jackes, robert;milne, tamar"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "101",
+            "courses_avg": 71.95,
+            "courses_instructor": "jackes, robert;milne, tamar"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "294",
+            "courses_avg": 72,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "phil",
+            "courses_id": "120",
+            "courses_avg": 72.24,
+            "courses_instructor": "jackson, howard;weiss, max"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "101",
+            "courses_avg": 72.33,
+            "courses_instructor": "jackes, robert;milne, tamar"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "450",
+            "courses_avg": 72.5,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "450",
+            "courses_avg": 73.04,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "450",
+            "courses_avg": 73.23,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "294",
+            "courses_avg": 73.3,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "294",
+            "courses_avg": 73.35,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "457",
+            "courses_avg": 73.9,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "294",
+            "courses_avg": 74.06,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "101",
+            "courses_avg": 74.11,
+            "courses_instructor": "jackes, robert;kroeker, jeff;milne, tamar"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "101",
+            "courses_avg": 74.12,
+            "courses_instructor": "jackes, robert;kroeker, jeff;milne, tamar"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "294",
+            "courses_avg": 74.16,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "294",
+            "courses_avg": 74.94,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "458",
+            "courses_avg": 75.34,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "294",
+            "courses_avg": 75.41,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "spha",
+            "courses_id": "503",
+            "courses_avg": 76.15,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "294",
+            "courses_avg": 76.75,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "baac",
+            "courses_id": "510",
+            "courses_avg": 77,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "baac",
+            "courses_id": "500",
+            "courses_avg": 77,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "baac",
+            "courses_id": "510",
+            "courses_avg": 77.07,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "spha",
+            "courses_id": "503",
+            "courses_avg": 77.34,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "458",
+            "courses_avg": 77.5,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "baac",
+            "courses_id": "500",
+            "courses_avg": 77.67,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "baac",
+            "courses_id": "510",
+            "courses_avg": 77.68,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "baac",
+            "courses_id": "510",
+            "courses_avg": 77.68,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "baac",
+            "courses_id": "510",
+            "courses_avg": 77.81,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "450",
+            "courses_avg": 77.87,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "spha",
+            "courses_id": "503",
+            "courses_avg": 78.55,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "comm",
+            "courses_id": "450",
+            "courses_avg": 80.34,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_id": "337",
+            "courses_avg": 80.41,
+            "courses_instructor": "jackson, cathryn"
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_id": "302",
+            "courses_avg": 80.61,
+            "courses_instructor": "jackson, cathryn;o'flynn-magee, katherine"
+        },
+        {
+            "courses_dept": "baac",
+            "courses_id": "510",
+            "courses_avg": 81,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_id": "337",
+            "courses_avg": 81.03,
+            "courses_instructor": "jackson, cathryn"
+        },
+        {
+            "courses_dept": "baac",
+            "courses_id": "550",
+            "courses_avg": 81.05,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "baac",
+            "courses_id": "510",
+            "courses_avg": 81.15,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "baac",
+            "courses_id": "501",
+            "courses_avg": 81.5,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_id": "334",
+            "courses_avg": 82,
+            "courses_instructor": "jackson, cathryn;mcburney, sheila mary;mislang, jonathan;tan, elsie;valkenier, beverley"
+        },
+        {
+            "courses_dept": "atsc",
+            "courses_id": "406",
+            "courses_avg": 82.5,
+            "courses_instructor": "jackson, peter"
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_id": "337",
+            "courses_avg": 82.73,
+            "courses_instructor": "jackson, cathryn;taverner, tarnia"
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_id": "302",
+            "courses_avg": 82.75,
+            "courses_instructor": "jackson, cathryn"
+        },
+        {
+            "courses_dept": "spha",
+            "courses_id": "503",
+            "courses_avg": 83.05,
+            "courses_instructor": "jackes, robert"
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_id": "334",
+            "courses_avg": 83.3,
+            "courses_instructor": "jackson, cathryn;mcburney, sheila mary;mislang, jonathan;tan, elsie;valkenier, beverley"
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_id": "303",
+            "courses_avg": 83.56,
+            "courses_instructor": "jackson, cathryn;jetha, farah;mislang, jonathan;phinney, alison;rea, gail;segaric, cheryl;valkenier, beverley"
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_id": "336",
+            "courses_avg": 84.84,
+            "courses_instructor": "jackson, cathryn;mcburney, sheila mary;mislang, jonathan;ricci, joanne;valkenier, beverley"
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_id": "540",
+            "courses_avg": 85.17,
+            "courses_instructor": "jackson, cathryn"
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_id": "540",
+            "courses_avg": 85.71,
+            "courses_instructor": "jackson, cathryn"
+        },
+        {
+            "courses_dept": "phil",
+            "courses_id": "120",
+            "courses_avg": 87.5,
+            "courses_instructor": "jackson, howard;weiss, max"
+        }
+    ]
+}

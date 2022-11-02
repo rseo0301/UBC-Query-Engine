@@ -1,0 +1,16 @@
+{
+    "title": "COLUMNS is empty",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_year": -1
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

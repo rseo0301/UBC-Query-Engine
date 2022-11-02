@@ -1,0 +1,32 @@
+{
+    "title": "Int is passed to audit",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_audit": 20
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "rhsc",
+            "courses_avg": 86.89
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_avg": 88.79
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 90.53
+        }
+    ]
+}

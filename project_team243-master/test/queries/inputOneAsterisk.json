@@ -1,0 +1,52 @@
+{
+    "title": "Input string is 1 asterisk (pass)",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_year": 2016
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "*"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 98
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "crwr",
+            "courses_id": "599",
+            "courses_avg": 98,
+            "courses_uuid": "46412"
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_id": "599",
+            "courses_avg": 98,
+            "courses_uuid": "46405"
+        }
+    ]
+}

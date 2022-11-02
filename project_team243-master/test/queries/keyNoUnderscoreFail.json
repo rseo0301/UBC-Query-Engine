@@ -1,0 +1,19 @@
+{
+    "title": "Key has no underscore",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "coursesavg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "coursesdept",
+                "coursesavg"
+            ],
+            "ORDER": "coursesavg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

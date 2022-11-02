@@ -1,0 +1,30 @@
+{
+    "title": "Contradiction in AND",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 98
+                    }
+                },
+                {
+                    "NOT": {
+                        "GT": {
+                            "courses_avg": 98
+                        }
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_instructor",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

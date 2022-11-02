@@ -1,0 +1,37 @@
+{
+    "title": "IS block is empty",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_year": 2010
+                            }
+                        },
+                        {
+                            "IS": {}
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 100
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

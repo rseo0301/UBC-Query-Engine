@@ -1,0 +1,19 @@
+{
+    "title": "ID string is underscore",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "__avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "__dept",
+                "__avg"
+            ],
+            "ORDER": "__avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

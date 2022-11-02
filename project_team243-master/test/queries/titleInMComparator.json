@@ -1,0 +1,19 @@
+{
+    "title": "SELECT dept, uuid WHERE uuid == 21654",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_uuid": "21654"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

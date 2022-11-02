@@ -1,0 +1,13 @@
+{
+    "title": "OPTIONS is empty",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_year": -1
+            }
+        },
+        "OPTIONS": {}
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

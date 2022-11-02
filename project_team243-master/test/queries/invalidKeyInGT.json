@@ -1,0 +1,19 @@
+{
+    "title": "Invalid key courses_faill in GT.",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_faill": 500
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

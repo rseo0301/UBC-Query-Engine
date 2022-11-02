@@ -1,0 +1,19 @@
+{
+    "title": "Pass is less than 0",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_pass": 0
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

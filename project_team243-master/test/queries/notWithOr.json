@@ -1,0 +1,75 @@
+{
+    "title": "OR inside NOT",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "OR": [
+                    {
+                        "GT": {
+                            "courses_avg": 10
+                        }
+                    },
+                    {
+                        "GT": {
+                            "courses_fail": 1000
+                        }
+                    }
+                ]
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "lfs",
+            "courses_id": "100",
+            "courses_avg": 0,
+            "courses_instructor": ""
+        },
+        {
+            "courses_dept": "lfs",
+            "courses_id": "100",
+            "courses_avg": 0,
+            "courses_instructor": ""
+        },
+        {
+            "courses_dept": "frst",
+            "courses_id": "202",
+            "courses_avg": 0,
+            "courses_instructor": ""
+        },
+        {
+            "courses_dept": "wood",
+            "courses_id": "475",
+            "courses_avg": 1,
+            "courses_instructor": ""
+        },
+        {
+            "courses_dept": "busi",
+            "courses_id": "330",
+            "courses_avg": 4,
+            "courses_instructor": ""
+        },
+        {
+            "courses_dept": "busi",
+            "courses_id": "330",
+            "courses_avg": 4,
+            "courses_instructor": ""
+        },
+        {
+            "courses_dept": "fopr",
+            "courses_id": "362",
+            "courses_avg": 4.5,
+            "courses_instructor": "bendickson, dennis"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "title": "SELECT dept, audit WHERE audit > 50",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_audit": 50
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_audit"
+            ],
+            "ORDER": "courses_audit"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,53 @@
+{
+    "title": "Nested NOT block inside AND",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 99
+                    }
+                },
+                {
+                    "NOT": {
+                        "NOT": {
+                            "GT": {
+                                "courses_avg": 50
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "cnps",
+            "courses_id": "574",
+            "courses_avg": 99.19,
+            "courses_instructor": "cox, daniel"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "527",
+            "courses_avg": 99.78,
+            "courses_instructor": ""
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "527",
+            "courses_avg": 99.78,
+            "courses_instructor": "gomez, jose"
+        }
+    ]
+}

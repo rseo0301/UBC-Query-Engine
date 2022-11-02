@@ -1,0 +1,19 @@
+{
+    "title": "Invalid value type in LT, should be number",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_year": "2015"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_year"
+            ],
+            "ORDER": "courses_year"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

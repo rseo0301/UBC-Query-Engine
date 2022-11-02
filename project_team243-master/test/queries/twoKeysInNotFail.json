@@ -1,0 +1,42 @@
+{
+    "title": "Two keys in NOT",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_avg": 98
+                            }
+                        },
+                        {
+                            "NOT": {
+                                "LT": {
+                                    "courses_pass": 200
+                                },
+                                "GT": {
+                                    "courses_audit": 200
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 100
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_instructor",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

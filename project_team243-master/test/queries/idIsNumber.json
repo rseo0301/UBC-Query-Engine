@@ -1,0 +1,19 @@
+{
+    "title": "SELECT dept, id WHERE id == 110",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_id": 110
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

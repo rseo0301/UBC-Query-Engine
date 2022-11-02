@@ -1,0 +1,59 @@
+{
+    "title": "Multiple filters in AND",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "LT": {
+                        "courses_fail": 100
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_instructor": "*morgan*"
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_pass": 20
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 98
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "spph",
+            "courses_id": "542",
+            "courses_avg": 86.68,
+            "courses_instructor": "morgan, steven george"
+        },
+        {
+            "courses_dept": "spph",
+            "courses_id": "542",
+            "courses_avg": 87.39,
+            "courses_instructor": "morgan, steven george"
+        },
+        {
+            "courses_dept": "educ",
+            "courses_id": "500",
+            "courses_avg": 97.5,
+            "courses_instructor": "morgan, tannis"
+        }
+    ]
+}

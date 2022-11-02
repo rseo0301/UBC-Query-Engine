@@ -1,0 +1,20 @@
+{
+    "title": "SELECT dept, instructor WHERE instructor == gregor",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_instructor": "gregor"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
+

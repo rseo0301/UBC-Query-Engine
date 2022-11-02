@@ -1,0 +1,15 @@
+{
+    "title": "Missing COLUMNS",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_avg": 0
+            }
+        },
+        "OPTIONS": {
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
